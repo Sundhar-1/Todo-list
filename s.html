@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="s.css">
+</head>
+<body> 
+    <div id="one">
+    <h2>STUDENT FORM</h2>
+    <div class="form-container">
+            <tr>
+        <label>Name:<input type="text" id="name"></label><br></tr>
+        <tr>
+        <label>Age:<input type="number" id="age"></label><br></tr>
+        <tr>
+        <label>Gender:<input type="radio" name="gender" value="Male">Male<input type="radio" name="gender" value="Female">Female</label><br></tr>
+        <tr>
+        <label>Course:<select id="course">
+            <option>JavaScript</option>
+            <option>C program</option>
+            <option>JAVA</option>
+            <option>PYTHON</option>
+        </select></label><br></tr>
+        <tr>
+        <label>E-mail:<input type="email" id="email"></label><br></tr>
+
+        
+        <button class="save-btn" onclick="saveStudent()" >Save</button>
+    </div>
+    </div>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Course</th>
+                <th>E-mail</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+   <script src="s.js"></script>
+</body>
+</html>
